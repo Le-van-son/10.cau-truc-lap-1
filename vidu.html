@@ -11,12 +11,19 @@
 <script>
     let i;
     tong = 0
+    tongchiahet13va2 = 0;
     function bam() {
         let a = +document.getElementById("nhap1").value
         let b = +document.getElementById("nhap2").value
         for (i = a; i <= b; i++) {
             tong = tong + i;
+            if( i%13 == 0 ){
+                if ( i%2 == 0)
+                tongchiahet13va2 = tongchiahet13va2 + i;
+            }
         }
+        alert("Tong la " +tongchiahet13va2)
+
         document.write("tong la " + tong);
     }
 </script>
