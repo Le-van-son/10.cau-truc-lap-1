@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vonglap for</title>
+</head>
+<body>
+<input id="nhap1" >
+<input id="nhap2" >
+<button onclick="bam()">click</button>
+<script>
+    let i;
+    tong = 0
+    function bam() {
+        let a = +document.getElementById("nhap1").value
+        let b = +document.getElementById("nhap2").value
+        for (i = a; i <= b; i++) {
+            tong = tong + i;
+        }
+        document.write("tong la " + tong);
+    }
+</script>
+</body>
+</html>
